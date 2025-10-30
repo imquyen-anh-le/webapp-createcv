@@ -1,7 +1,0 @@
-Các vấn đề gặp phải và hướng xử lý trong NCKH : 
-
-1. web k public 
-
-2. mỗi lần crawl dữ liệu thì dữ liệu có thể bị trùng lặp ( dữ liệu bẩn ) -> 
-
-job được update -> lưu vào bảng history 
