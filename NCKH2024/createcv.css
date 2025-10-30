@@ -1,0 +1,1761 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    box-sizing: border-box;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+.abso{
+    position: absolute;
+}
+.white{
+    color: #fff;
+}
+.white_bgr{
+    background-color: #fff;
+}
+.hidden{
+    display: none;
+}
+.mau_2_cot{
+    height: 100%;
+    padding: 32px 16px;
+}
+.flex{
+    display: flex;
+}
+.initial{
+    display:initial;
+}
+/* Phần định dạng văn bản */
+.bold{
+    font-weight: 600;
+}
+.italic{
+    font-style: italic;
+}
+.underline{
+    text-decoration: underline;
+}
+.listStyleTH1::before{
+    content: "•"; 
+    color: #333; 
+    font-size: 1.2em; 
+    margin-right: 8px
+}
+.listStyleTH2{
+    list-style: none;
+}
+
+/*  */
+.create_cv{
+    display: flex;
+    height: 100vh;
+}
+.heading,.congcu2>ul,.congcu1>ul{
+    display: flex;
+    align-items: center;
+}
+.returnHome{
+    top: 20px;
+    left: 14px;
+    background-color: rgb(194, 193, 193);
+    border-radius: 100%;
+    box-shadow: 1px 3px 6px 1px #d5d5d5;
+    position: fixed;
+    z-index: 10;
+}
+.returnHome>a{
+    padding: 11px 16px;
+    font-size: 20px;
+    color: black;
+    display: inline-block;
+}
+.returnHome>a:hover{
+    color:rgb(252, 83, 83);
+}
+.heading{
+    position: fixed;
+    font-size: 15px;
+    /* margin: 20px auto 0; */
+    background-color: rgb(194, 193, 193);
+    border-radius: 16px;
+    box-shadow: 1px 3px 6px 1px #d5d5d5;
+    left: 70px;
+    top: 20px;
+    width: 68%;
+    z-index: 10;
+}
+.heading li{
+    list-style: none;
+    padding: 6px 10px;
+}
+.heading li:hover,.heading li>a:hover{
+    color: rgb(252, 83, 83);
+}
+.heading li>a{
+    color: #000;
+}
+.heading li>a>i{
+    margin-right: 4px;
+}
+.congcu2>ul,.congcu1>ul{
+    justify-content: space-evenly;
+}
+.congcu2>ul>li>a{
+    text-decoration: none;
+    margin: 0 4px;
+}
+.congcu2>ul>li:nth-child(1),.congcu2>ul>li:nth-child(2),.congcu2>ul>li:nth-child(3){
+    font-size: 14px;
+    background-color: rgb(252, 83, 83);
+    border-radius: 18px;
+    margin: 6px 0;
+}
+.congcu2>ul>li:nth-child(1)>a,.congcu2>ul>li:nth-child(2)>a,.congcu2>ul>li:nth-child(3)>a{
+    color: #fff;
+}
+.congcu2>ul>li:nth-child(1):hover{
+    background: linear-gradient(2deg, #fe4079, #fc8a59);
+}
+
+/*  */
+.content-left,.instruct{
+    overflow-y: scroll;
+    flex: 1;
+    overflow: auto; 
+    height: 100%;
+}
+.content-left{
+    padding-top: 60px;
+}
+.content-left::-webkit-scrollbar,
+.instruct::-webkit-scrollbar{
+    width: 8px;
+}
+.content-left::-webkit-scrollbar-thumb,
+.instruct::-webkit-scrollbar-thumb{
+    background-color: #cecece;
+    border-radius: 8px;
+}
+.heading_paper{
+    width: 744px;
+    min-height: 220px;
+    background-color: #f55555; 
+    display: flex;
+    position:relative;
+    color: #fff;
+    left: -32px;
+    padding: 32px 32px 24px;
+    margin-bottom: 12px;    
+}
+.paper{
+    width: 744px;
+    height: 1073px;
+    margin: 3em auto 1em;
+    box-shadow: 1px 3px 6px 1px #878686;
+    position:relative;
+    padding-bottom: 32px;
+    padding-left: 32px;
+    padding-right: 32px;
+    font-size: 13.5px;
+}
+.introduce{
+    width: 80%;
+}
+.title_HD>section:first-child>b{
+    font-size: 40px;
+}
+.title_HD{
+    margin-bottom: 16px;
+}
+.information>section{
+    display: flex;
+    width: 100%;
+}
+.information>section:last-child section{
+    width: 50%;
+}
+.information li{
+    list-style: none;
+    display: flex;
+    margin-bottom: 10px;
+}
+.information p{
+    width: 100%;
+}
+.information li label:first-child{
+    min-width: 70px;
+}
+.anh_CV{
+    text-align: center;
+}
+.heading_paper>section:first-child>img{
+    width: 120px;
+    height: 120px;
+    position:absolute;
+    top: 28px;
+    right: 32px;
+}
+
+/* Content Cv  */
+.paragraph .add_Part,.paragraph .remove_Part{
+    min-width: 50px;
+    height: 100%;
+    top: 0;
+    text-align: center;
+}
+.paragraph .add_Part{
+    left: -60px;
+    font-size: 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: #fff;
+    min-height: 105px;
+}
+.paragraph .add_Part i{
+    padding: 6px 1px;
+    background-color: #878686;
+    display: inline-block;
+    width: 24px;
+    border-radius: 50%;
+    margin: 0 auto;
+}
+.paragraph .add_Part>div{
+    display: flex;
+    flex-direction: column;
+    height: 60px;
+    justify-content: space-between;
+}
+.paragraph .remove_Part{
+    right: -60px;
+    font-size: 24px;
+    color: #878686;
+    min-height: 36px;
+}
+.rank{
+    margin-bottom: 24px;
+    padding: 6px;
+    border: 2px solid #000;
+    border-radius: 8px;
+    background-color: #ffffc5;
+}
+.rank>p{
+    color: rgb(251, 173, 0);
+}
+.rank>p>i{
+    margin-right: 4px;
+}
+.rank>span{
+    width: 24px;
+    height: 24px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background-color: #eee;
+    color: rgb(251, 173, 0);
+    border: 2px solid #575757;
+    font-weight: 600;
+}
+.paragraph .repair_Font{
+    right: 0;
+    top: -26px;
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 18px;
+    color:rgb(182 189 187); 
+}
+.paragraph .edit_ContentCV{
+    position: absolute;
+    background-color: #ededed;
+    padding: 4px;
+    z-index: 4;
+}
+.paragraph .remove_Part i:hover{
+    color: red;
+}
+.paragraph .add_Part i:hover{
+    background-color:rgb(20, 112, 82);
+}
+.paragraph .repair_Font i:hover{
+    color: #000;
+}
+.content_CV{
+    padding: 0;
+}
+.overview li{
+    list-style: none;
+}
+.repair_Font{
+    min-width: 120px;
+}
+/*  */
+.title{
+    display: flex;
+    align-items: center;
+    margin-bottom: 12px;
+    position: relative;
+}
+.title>p{
+    color:#f55555;
+    padding: 8px 0;
+    width: 100%;
+    display: inline-block;
+}
+.title>i{
+    width: 30px;
+    height: 27px;
+    background-color: #f55555;
+    color: #fff;
+    margin-right: 4px;
+    text-align: center;
+    line-height: 24px;
+}
+
+
+.content_in_CV{
+    display: flex;
+    width: 100%;
+}
+.content_in_CV section:first-child,.half_left_of_content_item{
+    min-width: 30%;
+}
+.skill>.list_skill>.content_in_CV>section:first-child{
+    margin-top: 8px;
+}
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse
+}
+.projects table{
+    width: 100%;
+}
+.name_project{
+    margin: 8px 0;
+}
+.projects>.name_project p{
+    font-style: italic;
+}
+.half_right_of_content_item{
+    min-width: 70%;
+}
+.projects{
+    margin-top: 12px;
+}
+.project_ofPart li,.study_place li{
+    margin: 0px 0px 6px 16px;
+}
+.ct_overview>p,.project li,.study_place li{
+    margin: 6px 0;
+}
+.project_ofPart>p.type_2{
+    font-style: italic;
+    opacity: 0.8;
+    margin: 8px 0;
+}
+table{
+    width: 100%;
+}
+.content_in_CV[fatherpart="project"]{
+    display: block;
+    margin-bottom: 16px;
+}
+.projects b{
+    width: 100%;
+    display: inline-block;
+}
+.quantity_page{
+    position:absolute;
+    font-size: 14px;
+    bottom: 1em;
+    right: 2em;
+}
+/*  */
+
+
+/* Phần Gợi Ý và chatbot */
+.instruct{
+    /* width: 1000px; */
+    border: 1px solid #cfcece;
+    padding: 1em;
+    position:relative;
+}
+.button_chatbot> a{
+    padding: 12px 24px;
+    border-radius: 12px;
+    border: 2px solid #acaaaa;
+    position:fixed;
+    bottom: 1em;
+    right: 110px;
+    text-decoration: none;
+    background : linear-gradient(2deg, #ce40fe, #9ccfe0);
+    color: #fff;
+    transition: background 0.3s ease;
+}
+.toolbar {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    border: 1px solid #ccc;
+    padding: 5px;
+    z-index: 10;
+}
+
+.toolbar button {
+    border: none;
+    background: none;
+    cursor: pointer;
+    margin-right: 5px;
+    font-size: 16px;
+}
+
+.toolbar button:hover {
+    background-color: #ddd;
+}
+
+/* windows */
+
+.window,.let_resize{
+    top: 5em;
+    border-radius: 12px;
+    padding: 12px;
+    position: fixed;
+    z-index: 3;
+    background-color:#ccc;
+}
+.window_font{
+    width: 250px;
+    left: 2em;
+}
+.window li{
+    list-style: none;
+}
+.list_fonts{
+    display: flex;
+    width: 480px;
+}
+.font_size{
+    display: flex;
+    width: 80%;
+    justify-content: space-between;
+    margin: auto;
+}
+.font_size input{
+    width: 14px;
+    height: 14px;
+}
+.slide_font{
+    margin-top: 12px;
+    display: flex;
+}
+.list_fonts>div{
+    padding: 12px;
+    width: 160px;
+}
+.slide_font button,.ds_mau button,.window_maucv button{
+    top: 50%;
+    transform:translateY(-50%);
+    padding: 4px 7px;
+    border-radius: 100%;
+    border: none;
+}
+.slide_font button:last-child,.ds_mau button:last-child{
+    right: 12px;
+}
+.khungnhin_f{
+    width: 160px;
+    margin: 0 auto;
+    overflow:hidden;
+}
+.custom-cursor-on-hover:hover{
+    color: red;
+}
+
+/* Phần color */
+.window_color{
+    width: 420px;
+    left: 160px;
+}
+.ds_mau{
+    margin: 12px 0;
+}
+.daimau{
+    display: flex;
+}
+.bangmau{
+    width: 280px;
+    margin: auto;
+}
+.bangmau span{
+    width: 32px;
+    height: 32px;
+    display: inline-block;
+    border-radius: 100%;
+}
+.bangmau ul{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    width: 280px;
+}
+.bangmau ul li{
+    display: inline-block;
+    margin: 12px;
+    align-items: center;
+    border-radius: 100%;
+    display: flex;
+    height: 36px;
+    justify-content: center;
+    outline: 3px solid transparent;
+    transition: .3s ease;
+    padding: 0 2px;
+}
+.khungnhin_c{
+    width: 280px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.bangmau ul li:hover{
+    cursor: pointer;
+    outline-color: #fcfdfd;
+}
+
+/* Phần mẫu cv */
+.window_maucv{
+    left: 60px;
+    padding: 20px 32px;
+    z-index: 19;
+}
+.daianhcv>ul{
+    display: flex;
+}
+.daianhcv img{
+    width: 160px;
+    height: 200px;
+    border-radius: 12px;
+}
+.daianhcv>ul li{
+    padding: 4px;
+    border-radius: 12px;
+    background-color: #fff;
+    margin: 4px 12px;
+    text-align: center;
+    outline: 3px solid transparent;
+    transition: .3s ease;
+}
+.daianhcv>ul li:hover{
+    cursor: pointer;
+    outline-color: #0ed937;
+}
+.khungnhin_m{
+    width: 770px;
+    overflow: hidden;
+}
+.window_maucv button:last-child{
+    right: 10px;
+}
+.window_maucv button:first-child{
+    left: 10px;
+}
+
+/* Phần ảnh hồ sơ */
+.window_img{
+    left: 400px;
+    min-width: 200px;
+}
+.window_img>div li,.window_img>div>div:last-child{
+    padding: 8px 0;
+}
+.window_img div i{
+    min-width: 30px;
+}
+.window_img>div li:hover,.window_img>div>div:last-child:hover{
+    color: #f55555;
+}
+
+/*  */
+.img_select,.img_default{
+    display: flex;
+    padding: 8px;
+    background-color: #9ccfe0;
+    border-radius: 12px;
+    width: 80%;
+    margin: 0 auto;
+    align-items: center;
+}
+.img_select{
+    margin-top: 20px;
+}
+.choose_upload,.func_uploadImg{
+    position: fixed;
+    z-index: 5;
+    padding: 16px;
+    background-color: #ddd;
+    left: 50%;
+    transform:translateX(-50%);
+    border-radius: 12px;
+    min-height: 260px;
+    min-width: 400px;
+    text-align: center;
+    z-index: 12;
+}
+.choose_upload,.let_resize{
+    top: 80px;
+}
+.func_uploadImg{
+    top: 20px;
+}
+.let_resize{
+    left: 350px;
+    min-width: 200px;
+}
+.let_resize .slider{
+    width: 100%;
+    height: 10px;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    margin: 0 8px;
+    position:relative;
+}
+.butt{
+    width: 10px;
+    background-color: rgb(209, 25, 5);
+    height: 20px;
+    border-radius: 12px;
+    position: absolute;
+    left: 50%;
+    transform:translateX(-50%);
+}
+.let_resize>span{
+    font-weight: 600;
+}
+.let_resize>div:nth-child(2){
+    margin: 24px 0;
+    display: flex;
+    width: 100%;
+    align-items:center;
+}
+.let_resize>div:nth-child(2) button{
+    border: none;
+    padding: 4px;
+    border-radius: 4px;
+}
+.let_resize>div:nth-child(2) button:hover{
+    color:#fff;
+    background-color: #fe4079;
+}
+.let_resize>span::after{
+    content: "";
+    width: 100%;
+    border-bottom: solid 1px #fff;
+    position: absolute;
+    top: 40px;
+    left: 0px;
+}
+.func_uploadImg>div:first-child::after{
+    content: "";
+    width: 100%;
+    border-bottom: solid 1px #fff;
+    position: absolute;
+    top: 50px;
+}
+
+.have_line::after{
+    content: "";
+    width: 100%;
+    border-bottom: solid 1px #a6a3a3;
+    position: absolute;
+    bottom: -5px;
+    
+}
+.func_uploadImg>div:first-child>span:hover{
+    color: #fe4079;
+    font-weight: 600;
+}
+.choose_upload img{
+    width: 36px;
+    margin-right: 16px;
+    border-radius: 12px;
+}
+.choose_upload>i,.func_uploadImg>i{
+    position:absolute;
+    font-size: 26px;
+    top: 10px;
+    right: 10px;
+}
+.choose_upload>i:hover,.func_uploadImg>i:hover{
+    color: red;
+}
+.choose_upload>p{
+    margin: 12px 0;
+}
+.choose_upload>span{
+    font-size: 20px;
+    font-weight: 700;
+}
+/* overlay */
+.overlay{
+    position:fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #000;
+    opacity: 0.4;
+    z-index: 5;
+}
+.func_uploadImg>div:last-child,.func_uploadImg>div:nth-child(4){
+    margin-top: 12px;
+}
+.func_uploadImg>div:last-child>button,.func_uploadImg>div:nth-child(4)>button,.useWhenResize>button{
+    border-radius: 4px;
+    padding: 4px 8px;
+    border: none;
+}
+.func_uploadImg>div:last-child>button:first-child,.func_uploadImg>div:nth-child(4)>button:first-child,.useWhenResize>button:first-child{
+    margin-right: 12px;
+    background-color: rgb(5, 142, 96);
+    color: #fff;
+}
+.func_uploadImg>div:first-child,.useWhenResize{
+    display: flex;
+    justify-content: space-evenly;
+    padding-bottom: 8px;
+}
+.upload_file{
+    border: 4px dashed #fff;
+    border-radius: 8px;
+    min-height: 200px;
+    padding: 8px;
+    margin-top: 20px;
+}
+.upload_file>button{
+    padding: 8px 16px;
+    border-radius: 4px;
+    border: none;
+    margin-top: 12px;
+}
+.upload_file>p:first-child{
+    margin-top: 32px;
+}
+
+/* Phần chọn mục lớn ở Cv */
+.addNewItem{
+    width: 800px;
+    height: 340px;
+    background: linear-gradient(120deg,#78A3EB,#FBC2EB);
+    position: fixed;
+    left: 50%;
+    transform:translateX(-50%);
+    top: 80px;
+    border-radius: 12px;
+    padding: 12px;
+    z-index: 12;
+    color: #fff;
+    overflow-y: scroll;
+    border: 2px solid #ddd;
+}
+.addNewItem>h2{
+    margin-left: 12px;
+}
+.addNewItem::-webkit-scrollbar{
+    width: 8px;
+}
+.addNewItem::-webkit-scrollbar-thumb{
+    background-color: #fff;
+    border-radius: 8px;
+}
+.addNewItem>i{
+    top: 12px;
+    right: 12px;
+    font-size: 24px;
+}
+.addNewItem>i:hover{
+    color: red;
+}
+.addNewItem p{
+    margin-top: 12px;
+    color: #000;
+}
+.list_partItem{
+    /* display: flex; */
+    flex-wrap: wrap;
+    /* padding: 0 4px; */
+    justify-content: space-evenly;
+}
+.list_partItem>div{
+    background-color: #fff;
+    min-height: 100px;
+    border-radius: 12px;
+    margin: 16px 8px;
+    box-shadow:2px 4px 6px 2px #7a7474;
+    text-align: center;
+    /* margin: auto; */
+    box-shadow: 1px 3px 0px 1px #000;
+    border: 2px solid #000;
+}
+.list_partItem i{
+    border: 2px solid #000;
+    padding: 12px 12px;
+    border-radius: 50%;
+}
+.paper .content_in_CV>section:last-child{
+    width: 100%;
+}
+.part_ct{
+    margin-bottom: 12px;
+}
+/* Phần mẫu default */
+/* Chỉnh Sửa mẫu Cv mẫu 1 */
+.paper_mau1{
+    display: flex;
+}
+.paper_mau1 .information>section:last-child section{
+    width: 100%;
+}
+.paper_mau1 .content_CV{
+    padding-top: 24px;
+}
+
+.paper_mau1 .content_CV,.paper_mau1 .half-right{
+    width: 100%;
+}
+.paper_mau1 .heading_paper{
+    display: block;
+    max-width: 240px;
+    height: calc(100% + 32px);
+    padding-left: 16px;
+    padding-right: 16px;
+}
+.paper_mau1 .heading_paper>section:first-child>img{
+    position: initial;
+    border-radius: 50%;
+    margin-bottom: 2em;
+    border: 4px solid #fff;
+}
+
+.paper_mau1 .heading_paper>section:last-child{
+    width: 100%;
+}
+.paper_mau1 .information ul>li{
+    display: block;
+}
+
+.paper_mau1 .content_CV .title_HD{
+    text-align: center;
+    color : #000;
+}
+
+.paper_mau1 .heading_paper .title{
+    background-color: #fff;
+}
+.paper_mau1 .heading_paper>section:last-child .information>section{
+    /* width: 100%; */
+}
+.paper_mau1 .heading_paper .information{
+    display: block;
+}
+.paper_mau1 .heading_paper .information .personal_in4{
+    display: block;
+}
+
+/* .paper_mau1 .heading_paper .information>section:last-child section{
+    width: 100%;
+} */
+.paper_mau1 .introduce{
+    width: 100%;
+}
+.paper_mau1 .heading_paper .part_ct .title>i{
+    margin-left: 3px;
+}
+/* Chỉnh sửa Mẫu CV Mẫu 2*/
+.paper_mau2 .part_ct .title{
+    border-radius: 1px;
+    background-color: #f55555;
+    width: 30%;
+}
+.paper_mau2 .part_ct .title>p{
+    color: #fff;
+    text-align: center;
+    line-height: 32px;
+    padding: 0;
+}
+.paper_mau2 .content_in_CV>section:last-child{
+    width: 100%;
+}
+.paper_mau2 .part_ct .title>i{
+    display: none;
+}
+.paper_mau2 .part_ct .title::before{
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: -470px;
+    transform: translateY(-50%);
+    background-color: #f55555;
+    width: 222%;
+    height: 2px;
+}
+.paper_mau2 .part_ct .title::after{
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: -24px; /* Phù hợp với độ dài đường nối */
+    transform: translateY(-50%);
+    width: 0;
+    height: 0;
+    border-top: 16px solid #fff; /* Tạo tam giác nhọn */
+    border-left-width: 24px;
+    border-left-style: solid;
+    border-left-color: #f55555;
+    border-bottom: 16px solid #fff;
+}
+.paper_mau2 .heading_paper{
+    background-color: #fff;
+    color: #000;
+    /* text-align: center; */
+}
+.paper_mau2 .heading_paper .information{
+    display: block;  
+}
+.paper_mau2 .heading_paper .information section{
+    width: 100%;
+    margin-top: 12px;
+}
+.paper_mau2 .heading_paper .information section ul{
+    display: flex;
+    flex-wrap: wrap;
+}
+.paper_mau2 .heading_paper .information section ul>li{
+    width: 180px;
+}
+.paper_mau2 .heading_paper .information li b:first-child{
+    min-width: 36px;
+}
+.paper_mau2 .heading_paper .title_HD{
+    position: relative;
+}
+.paper_mau2 .heading_paper .title_HD::after{
+    content: '';
+    position: absolute;
+    bottom: -20%;
+    left: 0;
+    transform: translateY(-50%);
+    background-color: #f55555;
+    width: 100%;
+    height: 2px;
+
+}
+.paper_mau2 .heading_paper .title_HD>section:first-child>b{
+    font-size: 28px;
+}
+/* Chỉnh sửa CV mẫu 3 */
+.paper_mau3{
+    display: flex;
+}
+.paper_mau3 .content_CV{
+    padding-top: 24px;
+    width : 100%;
+}
+.hd_mau3{
+    display: block;
+    background-color: #eda0a0;
+    max-width: 240px;
+    height: 1072px;
+    padding-left: 16px;
+    padding-right: 16px;
+}
+.paper_mau3 .content_in_CV>section:last-child{
+    width: 100%;
+} 
+.phan_phu{
+    width: 100%;
+    height: 300px;
+    position: absolute;
+    z-index: 2;
+    left: 0;
+}
+.phan_phu>section:first-child{
+    display: flex;
+}
+.phan_phu>section:first-child .anh_CV>img{
+    position:absolute;
+    border-radius: 50%;
+    border: 4px solid #fff;
+    width: 120px;
+    left: 50%;
+    transform:translateX(-50%);
+    top: 16px;
+}
+.phan_phu>section:first-child>section:last-child{
+    width: 100%;
+    margin: 0 32px 0;
+    margin-top: 16px;
+}
+.phan_phu>section:first-child>.anh_CV{
+    min-width: 236px;
+    min-height: 180px;
+    position:relative;
+}
+.phan_phu .information ul>li b:first-child{
+    min-width: 32px;
+}
+.phan_phu .information{
+    display: block;
+}
+.paper_mau3 .title{
+    border-radius: 20px;
+    background-color: #eb9e9e;
+}
+
+.paper_mau3 .title>p{
+    color: #fff;
+}
+.paper_mau3 .title>i{
+    width: 30px;
+    height: 27px;
+    border-radius: 50%;
+    border: 1px solid #fff;
+    background-color: #eb9e9e;
+}
+.introduce_mau3{
+    width: 65%;
+    position: relative;
+    padding: 8px 12px;
+    background-color: #f55555;
+    min-height: 100px;
+}
+.introduce_mau3::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: -260px; /* Đẩy ra ngoài để căn chỉnh */
+    width: 120px;
+    height: 100%; /* Chiều cao khớp với container */
+    background: #f55555; /* Màu khối bên phải */
+    border-top-left-radius: 50%;
+    border-bottom-left-radius: 50%;
+}
+.introduce_mau3::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: -120px; /* Đẩy ra ngoài để căn chỉnh */
+    width: 120px;
+    height: 100%; /* Chiều cao khớp với container */
+    background: #f55555; /* Màu khối bên trái */
+    border-bottom-right-radius: 50%;
+    border-top-right-radius: 50%;
+  }
+.paper_mau3 .part_ct {
+    margin-top: 12px;
+}
+
+/* Mẫu 4 */
+.heading_paper_mau4{
+    min-height: 180px;
+    /* background-color: #fff; */
+}
+.heading_paper_mau4>.introduce{
+    text-align: center;
+    width: 100%;
+}
+.heading_paper_mau4>.introduce p{
+    margin-top: 32px;
+}
+.heading_paper_mau4>.introduce>.title_HD>section:first-child>b{
+    position:relative;
+    display: inline-block;
+}
+.heading_paper_mau4>.introduce>.title_HD>section:first-child>b::before {
+    content: "";
+    position: absolute;
+    top: 130%;
+    height: 2px; 
+    background-color: #FFFFFF;
+    transform: translateY(-50%);
+    width: 100%;
+}
+  
+.heading_paper_mau4>.introduce>.title_HD>section:first-child>b::after {
+    content: "";
+    position: absolute;
+    top: 130%;
+    left: 50%;
+    width: 20px; 
+    height: 20px;
+    background-color: #f55555;
+    border: 2px solid #fff; 
+    transform: translate(-50%, -50%) rotate(45deg); 
+}
+
+.paper_mau4 .information>section:last-child section{
+    width: 100%;
+}
+.icon_crystal{
+    width: 6px;
+    height: 6px;
+    margin-right: 8px;
+    transform:rotate(45deg);
+}
+.paper_mau4 .content_CV{
+    display: flex;
+}
+.paper_mau4 .content_CV .content_in_CV section:first-child{
+    margin-right: 6px;
+}
+.paper_mau4 .content_CV>.half-left,.paper_mau5 .content_CV>.half-left
+,.paper_mau6 .content_CV>.half-left,.paper_mau7 .content_CV>.half-left{
+    width: 40%;
+    height: -1%;
+    padding-right: 12px;  
+}
+.paper_mau4 .content_CV>.half-right,.paper_mau5 .content_CV>.half-right
+,.paper_mau6 .content_CV>.half-right,.paper_mau7 .content_CV>.half-right{
+    width: 60%;
+    padding-left: 12px;
+}
+.paper_mau5 .content_CV>.half-left{
+    border-right: 2.5px solid #000;
+}
+.paper_mau4 .content_CV>.half-left{
+    border-right: 1px solid #ddd;
+}
+.paper_mau7 .content_CV>.half-left{
+    border-right: 3px dotted rgb(163, 159, 159);
+}
+.paper_mau4 .personal_in4{
+    display: inline-block;
+}
+.paper_mau4 .content_CV .title>i{
+    display: none;
+}
+.information_mau4{
+    display: block;
+    width: 100%;
+}
+.information_mau4>section:nth-child(2){
+    display: block;
+}
+.information_mau4>section:nth-child(2)>section{
+    width: 100%;
+}
+
+/* Mẫu 5 */
+.paper_mau5 .content_CV{
+    display: flex;
+}
+.paper_mau5 .content_CV .content_in_CV section:first-child{
+    margin-right: 6px;
+}
+.paper_mau5 .personal_in4{
+    display: inline-block;
+}
+.paper_mau5 .information>section:last-child section{
+    width: 100%;
+}
+.introduce_mau5{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    border: 3px solid #000; 
+}
+
+.paper_mau5 .information{
+    display: block;
+} 
+.paper_mau5 .title i{
+    display: none;
+}
+.paper_mau5 .title>p{
+    border: 2px solid #000;
+    text-align: center;
+}
+.heading_paper_mau5{
+    min-height: 180px;
+    color: #f55555;
+    background-color: #fff;
+}
+/* Mẫu 6 */
+.heading_paper_mau6>section:first-child>img{
+    border-top-right-radius: 60px;
+    border-bottom-right-radius: 60px;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.heading_paper_mau6{
+    min-height: 226px;
+    text-align: center;
+}
+.paper_mau6 .information>section:last-child section{
+    width: 100%;
+}
+.paper_mau6{
+    background-color: #ededed;
+}
+.paper_mau6 .personal_in4{
+    display: initial;
+}
+.paper_mau6 .content_CV{
+    display: flex;
+    padding-top: 24px;
+}
+.paper_mau6 .introduce{
+    width: 100%;
+}
+.paper_mau6 .content_CV .paragraph{
+    background-color: #fff;
+    padding: 4px;
+    margin-bottom: 4px;
+    border-radius: 6px;
+}
+.paper_mau6 .title>p{
+    padding : 6px 0;
+}
+.paper_mau6 .title>i{
+    display: none;
+}
+.paper_mau6 .title_HD{
+    text-align: center;
+    color: #fff;
+    margin-top: 32px;
+}
+.paper_mau6 .content_CV .content_in_CV{
+    background-color: #fff;
+}
+.paper_mau6 .content_CV .content_in_CV section:first-child{
+    margin-right: 6px;
+}
+.content_in_CV[fatherpart="overview"]{
+    display: block;
+}
+/* Mẫu 7 */
+.heading_paper_mau7>section:first-child>img{
+    border: 4px solid #aaaaaa;
+    border-radius: 12px;
+    position: initial;
+}
+.heading_paper_mau7{
+    display: block;
+    padding: 20px 20px 0;
+    border-radius: 12px;
+    background-color: #e5e2e2;
+}
+.heading_paper_mau7 .anh_CV{
+    background-color: #B488BF;
+    padding-top: 12px;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+}
+.paper_mau7 .information>section:last-child section{
+    width: 100%;
+}
+.paper_mau7 .information,.paper_mau7 .information .personal_in4{
+    display:block;
+}
+.paper_mau7 .content_CV .personal_in4{
+    background-color: #fff;
+    border-radius: 12px;
+}
+.paper_mau7 .content_CV .ct_in_sectionSM{
+    background-color: #fff;
+}
+.paper_mau7 .content_CV .ct_in_sectionSM>section{
+    border-radius: 12px;
+}
+.heading_paper_mau7 .introduce{
+    text-align: center;
+    width: 100%;
+}
+.paper_mau7 .title_HD section:first-child{
+    background-color: #B488BF;
+    padding: 20px 0px;
+}
+.paper_mau7{
+    background-color: #e5e2e2;
+}
+.paper_mau7 .content_CV{
+    display: flex;
+    padding-top: 24px;
+}
+.paper_mau7 .title_HD section:last-child{
+    padding: 10px 0;
+    border-bottom-right-radius: 12px;
+    border-bottom-left-radius: 12px;
+}
+.paper_mau7 .title i{
+    display: none;
+}
+.paper_mau7 .title>p{
+    text-align: center;
+    background-color: #b89ebe;
+    color: #fff;
+    border-radius: 12px;
+    width: 60%;
+    margin-bottom: -12px;
+    z-index: 2;
+}
+.information_mau7{
+    display: block;
+    width: 100%;
+}
+.information_mau7>section:nth-child(2){
+    display: block;
+}
+
+.paper_mau7 .content_CV .part_ct>section:not(:first-of-type){
+    background-color: #ffffff;
+    border-radius: 12px;
+    margin-bottom: 12px;
+}
+.paper_mau7 .title + section{
+    margin-top: -12px;
+}
+.paper_mau7 .name_project{
+    padding: 20px 0 4px;
+}
+.paper_mau7 .projects{
+    margin: 0;
+}
+.paper_mau7 .part_one{
+    border-right: 3px dotted rgb(163, 159, 159);
+}
+.paper_mau7 .content_CV .content_in_CV:not(tr.content_in_CV),.paper_mau7 .ct_overview >p{
+    margin: 0 0 6px;
+}
+.paper_mau7 .part_ct .content_in_CV.paragraph.item_in_part,.paper_mau7 .personal_in4,.paper_mau7 .ct_overview{
+    padding: 20px 4px 4px;
+}
+.content_cv_mau7 .part_ct>section:first-child::after{
+    display: none;
+    margin-bottom: -16px;
+}
+.paper_mau7 .paragraph:not(.part_ct){
+    background-color: #fff;
+    border-radius: 8px;
+}
+.content_cv_mau7 .part_ct>section:first-child{
+    margin-bottom: 0;
+}
+/* Mẫu 8 */
+.paper_mau8{
+    padding: 0;
+    display: flex;
+}
+.paper_mau8 .heading_paper{
+    position:inherit;
+    left: 0;
+    background-color: #e5e2e2;
+    display: block;
+    max-width: 210px;
+    height: 100%;
+    padding-right: 16px;
+    padding-left: 16px;
+}
+.paper_mau8 .heading_paper .information{
+    width: 100%;
+}
+.paper_mau8 .heading_paper .information>section:last-child{
+    display: inline-block;
+}
+.paper_mau8 .heading_paper .information li{
+    display: block;
+}
+.paper_mau8 .heading_paper .introduce{
+    width: 100%;
+}
+.paper_mau8 .content_CV{
+    padding: 24px;
+    display:initial;
+    width: 100%;
+}
+.paper_mau8 .content_CV .title{
+    background-color: #f55555;
+    color: #fff;
+}
+.paper_mau8 .content_CV .title>p{
+    color: #fff;
+}
+.paper_mau8 .title_HD{
+    background-color: #f55555;
+    padding: 2em 0;
+    color: #fff;
+    text-align: center;
+}
+.paper_mau8 .heading_paper>.introduce >.information>section:first-child{
+    background-color: #f55555;
+}
+.paper_mau8 .heading_paper>.introduce >.information>section:first-child>p{
+    color: #fff;
+}
+.paper_mau8 .heading_paper>section:first-child>img{
+    position:inherit;
+    border-radius: 50%;
+    margin-bottom: 2em;
+    border: 4px solid #fff;
+}
+.paper_mau8 .information>section{
+    display: block;
+}
+/* Mẫu 9 */
+
+.paper_mau9 .heading_paper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    padding: 0;
+    min-height: 180px;
+}
+.paper_mau9 .heading_paper>section:first-child>img{
+    border-radius: 50%;
+    left: 30px;
+    top: 50%;
+    transform: translateY(-50%);
+    border: 6px solid #f55555;
+}
+.paper_mau9 .information>section:last-child section{
+    width: 100%;
+}
+.paper_mau9 .personal_in4{
+    display: initial;
+}
+.paper_mau9{
+    background-color: #fff;
+}
+.paper_mau9 .part_ct{
+    background-color: #fff;
+    padding: 4px;
+    border-radius: 6px;
+}
+.paper_mau9 .title i{
+    display: none;
+}
+.paper_mau9 .title_HD{
+    text-align: center;
+    color: #fff;
+    background-color: #f55555;
+    padding: 4px;
+}
+.paper_mau9 .title_HD>section:first-child>b{
+    font-size: 32px;
+}
+.paper_mau9 .introduce{
+    width: 100%;
+}
+.paper_mau9 .have_line::after{
+    content: "";
+    width: 100%;
+    border-bottom-color: #f55555;
+    border-bottom-width: 4px;
+    border-bottom-style: solid;
+    position:inherit;
+    margin-bottom: 8px;
+}
+.paper_mau9 .content_CV{
+    display: flex;
+    padding-top: 24px;
+}
+.paper_mau9 .title>p{
+    width: auto;
+    margin-right: 8px;
+}
+
+/*  Mẫu 10 */
+.paper_mau10{
+    display: flex;
+    padding-left : 0;
+}
+.paper_mau10 .content_CV{
+    width: 70%;
+    padding-top: 24px;
+}
+.paper_mau10 .heading_paper{
+    display: flex;
+    background-color: #fff;
+    padding: 0;
+    width: 30%;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    left: 0;
+}
+.paper_mau10 .heading_paper .anh_CV{
+    height: calc(100% + 32px);
+    background-color: #f55555;
+    width: 40px;
+    position: absolute;
+    top: 0;
+}
+.paper_mau10 .heading_paper>section:first-child>img{
+    position: absolute;
+    top: 32px;
+    width: 120px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 50%;
+    border: 8px solid #f55555;
+}
+.paper_mau10{
+    background-color: #fff;
+}
+.paper_mau10 .part_ct{
+    background-color: #fff;
+    padding: 4px;
+    border-radius: 6px;
+}
+.paper_mau10 .title i{
+    display: none;
+}
+.paper_mau10 .title_HD{
+    text-align: center;
+    color: #fff;
+    background-color: #f55555;
+    padding: 4px;
+    border-radius: 12px;
+    width: 100%;
+}
+.paper_mau10 .title_HD>section:first-child>b{
+    font-size: 32px;
+}
+.paper_mau10 .introduce{
+    width: 100%;
+}
+.paper_mau10 .have_line::after{
+    content: "";
+    width: 100%;
+    border-bottom: solid 4px #f55555;
+    position:absolute;
+    bottom: -5px;
+    border-radius: 12px;
+}
+.paper_mau10 .title>p{
+    width: auto;
+    margin-right: 8px;
+}
+.paper_mau10 .title{
+    justify-content: center;
+}
+/* Mẫu 11 */
+.title_mau11{
+    position: relative;
+    display: inline-block;
+    margin-bottom: 8px;
+}
+.heading_paper_mau11{
+    min-height: 150px;
+    margin: 0;
+}
+.heading_paper_mau11>.introduce{
+    text-align: center;
+    width: 100%;
+}
+.paper_mau11 .content_CV{
+    display: flex;
+    padding-top: 24px;
+}
+.paper_mau11 .have_line::after{
+    display: none;
+}
+.paper_mau11 .content_CV .information li b:first-child{
+    min-width: 40px;
+    text-align: center;
+}
+.paper_mau11 .content_CV .part_one .part_ct  {
+    border-radius: 12px;
+    background-color: #d9d9d9;
+}
+.paper_mau11 .information>section{
+    display: block;
+}
+.paper_mau11 .content_CV .part_one>section{
+    margin-top: 12px;
+    display: block;
+    width: 100%;
+    padding: 4px;
+    background-color: #d9d9d9;
+    border-radius: 12px;
+}
+.paper_mau11 .content_CV .part_two .part_ct{
+    position:relative;
+}
+
+.paper_mau11 .content_CV .part_two .part_ct::before{
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 8px;
+    background-color: #d9d9d9;
+    border-radius: 12px;
+}
+.paper_mau11 .title>i{
+    border-radius: 5px;
+}
+.paper_mau11 .content_CV .part_two .part_ct section{
+    margin-left: 12px;
+}
+
+.paper_mau11 .content_CV .part_one .information .anh_CV img{
+    width: 120px;
+    height: 120px;
+
+    border-radius: 50%;
+    border: 4px solid #ededed;
+}
+
+.paper_mau11 .content_CV .part_one .information>section:last-child,
+.paper_mau11 .content_CV .part_one .information>section:first-child{
+    display: block;
+    padding-left: 6px;
+}
+
+.paper_mau11 .content_CV .part_one .information>section:last-child section{
+    width: 100%;
+}
+/* Mẫu 12 */
+.heading_paper_mau12 .title_HD>section:first-child>b{
+    position: relative;
+    display: inline-block;
+}
+.heading_paper_mau12{
+    min-height: 150px;
+    display: block;
+}
+.heading_paper_mau12>.introduce{
+    text-align: center;
+    width: 100%;
+}
+.paper_mau12{
+    background-color: #f1f1f1;
+}
+.paper_mau12 .content_CV{
+    display: flex;
+    padding-top: 24px;
+}
+.paper_mau12 .content_CV .paragraph{
+    border-radius: 12px;
+    background-color: #fff;
+}
+.paper_mau12 .content_CV .content_in_CV {
+    background-color: #fff;
+}
+.paper_mau12 .have_line::after{
+    display: none;
+}
+.paper_mau12 .content_CV .information li b:first-child{
+    min-width: 40px;
+    text-align: center;
+}
+.paper_mau12 .content_CV .information li{
+    display: flex;
+}
+.paper_mau12 .content_CV .title>i:first-child{
+    border-radius: 8px;
+}
+
+.paper_mau12 .content_CV .part_ct{
+    border-radius: 12px;
+    background-color: #fff;
+}
+.paper_mau12 .ct_in_sectionSM{
+    border-radius: 12px;
+}
+.information_mau12{
+    display: block;
+    width: 100%;
+    padding: 8px;
+    background-color: #fc9f9f;
+    border-radius: 12px;
+    display: flex;
+    border: 4px solid #fff;
+    background-color: #f1f1f1;
+    color: #000;
+}
+
+.information_mau12 .anh_CV img{
+    width: 120px;
+    border-radius: 12px;
+    border: 4px solid #f55555;
+}
+.information_mau12 .anh_CV{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.information_mau12>section:last-child{
+    display: block;
+}
+
+.information_mau12>section:last-child section{
+    width: 100%;
+}
+
+/* Phần instruct */
+.heading_suggest{
+    margin-bottom: 24px;
+    background-color: #ddd;
+    padding-left: 8px;
+    border-radius: 8px;
+    box-shadow: 1px 3px 0px 1px #000;
+    border: 2px solid #000;
+    margin-bottom: 24px;
+    text-align: center;
+}
+.heading_suggest>h2{
+    font-size: 30px;
+    background-color: #ddd;
+    border-radius: 8px;
+}
+
+.box_progress>span{
+    margin: 0 12px;
+    align-content: center;
+}
+.box_progress>span>i{
+    color: #fff;
+    text-shadow: 0 0 2px #575757;
+}
+.box_progress{
+    margin-bottom: 20px;
+    display: flex;
+    border-radius: 8px;
+    box-shadow: 1px 3px 0px 1px #000;
+    border: 2px solid #000;
+    background-color: #ddd;
+    padding: 4px;
+    color : #fff;
+    text-shadow: 0 0 2px #575757;
+}
+.box_progress>h3{
+    font-size: 15px;
+}
+.border_blue{
+    box-shadow: 1px 3px 0px 1px #74c0fc;
+    border: 2px solid #74c0fc;
+    text-shadow: 0 0 0px #fff;
+    color : #74c0fc;
+}
+.border_blue>span>i{
+    color: #74c0fc;
+    text-shadow: 0 0 0px #fff;
+}
+.box_progress:hover{
+    box-shadow: 1px 3px 0px 1px #74c0fc;
+    border: 2px solid #74c0fc;
+    transition: 0.6s ease;
+}
+.possible_Part{
+    padding-left: 3px;
+}
+.not_available{
+    opacity: 0.4;
+}

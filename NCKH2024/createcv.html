@@ -1,0 +1,595 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create CV</title>
+    <link rel="stylesheet" href="./grid.css">
+    <link rel="stylesheet" href="./createcv.css">
+    <link rel="stylesheet" href="./fontawesome-free-6.6.0-web/css/all.css">
+    <link rel="stylesheet" href="./canvas/cropper.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Courgette&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Courgette&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Courgette&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Playwrite+VN+Guides&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Courgette&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Playwrite+VN+Guides&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&family=Courgette&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Playwrite+VN+Guides&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&family=Courgette&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Playwrite+VN+Guides&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&family=Courgette&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Playwrite+VN+Guides&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&family=Courgette&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Playwrite+VN+Guides&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&family=Courgette&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Playwrite+VN+Guides&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&family=Courgette&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Playwrite+VN+Guides&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&family=Courgette&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Playwrite+VN+Guides&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&family=Courgette&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Lora:ital,wght@0,400..700;1,400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Playwrite+VN+Guides&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&family=Courgette&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Exo:ital,wght@0,100..900;1,100..900&family=Lora:ital,wght@0,400..700;1,400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Playwrite+VN+Guides&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&family=Courgette&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Exo:ital,wght@0,100..900;1,100..900&family=Lora:ital,wght@0,400..700;1,400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Playwrite+VN+Guides&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+    <script src="./canvas/cropper.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.2/html2pdf.bundle.js"></script>
+</head>
+<body>  
+    <div class="create_cv">
+        <div class="content-left l-9">
+            <div class="returnHome">
+                <a href="http://127.0.0.1:5500/"><i class="fa-solid fa-angle-left"></i></i></a>
+            </div>
+            <div class="heading">
+                <div class="congcu1 l-6">
+                    <ul>
+                        <li tabid="1">
+                            <i class="fa-solid fa-font"></i>
+                            Phông Chữ</li>
+                        <li tabid="2">
+                            <i class="fa-solid fa-palette"></i>
+                            Màu Sắc</li>
+                        <li tabid="3">
+                            <i class="fa-solid fa-address-card"></i>
+                            Mẫu CV</li>
+                        <li tabid="4">
+                            <i class="fa-solid fa-image"></i>
+                            Ảnh Hồ Sơ</li>
+                    </ul>
+                </div>
+                <div class="congcu2 l-6">
+                    <ul>
+                        <li>
+                            <a href="">
+                                <i class="fa-solid fa-circle-down"></i>
+                                Tải Xuống
+                            </a>
+                        </li>
+                        <li class="save_YourCv ">
+                            <a href="" onclick="return false;">
+                                <i class="fa-regular fa-floppy-disk"></i>
+                                Lưu CV
+                            </a>
+                        </li>
+                        <li class="add_newCv hidden">
+                            <a href="" onclick="return false;">
+                                <i class="fa-solid fa-circle-plus"></i>
+                                Thêm Mới CV
+                            </a>
+                        </li>
+                        <li>                           
+                            <a href="http://127.0.0.1:5500/qlyCV.html"><i class="fa-solid fa-list-check"></i>Quản Lý CV</a>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+            <div class="window window_font hidden">
+                <span> Phông Chữ</span>
+                <div class="slide_font">
+                    <button class="abso"> <i class="fa-solid fa-angle-left"></i></button>
+                    <div class="khungnhin_f">
+
+                        <div class="list_fonts">
+                            <div>
+                                <ul>
+                                    <li class="custom-cursor-on-hover" style="font-family: Arial;">Arial</li>
+                                    <li class="custom-cursor-on-hover" style="font-family: Times New Roman;">Times New Roman</li>
+                                    <li class="custom-cursor-on-hover" style="font-family: Courgette;">Courgette</li>
+                                    <li class="custom-cursor-on-hover" style="font-family: Roboto Mono;">Roboto Mono</li>
+                                    <li class="custom-cursor-on-hover" style="font-family: DM Sans;">DM Sans</li>
+                                    <li class="custom-cursor-on-hover" style="font-family: EB Garamond;">EB Garamond</li>
+                                </ul>
+                            </div>
+    
+                            <div>
+                                <ul>
+                                    <li class="custom-cursor-on-hover" style="font-family: Arimo;">Arimo</li>
+                                    <li class="custom-cursor-on-hover" style="font-family: Roboto;">Roboto</li>
+                                    <li class="custom-cursor-on-hover" style="font-family: Helvetica;">Helvetica</li>
+                                    <li class="custom-cursor-on-hover" style="font-family: Noto Sans;">Noto Sans</li>
+                                    <li class="custom-cursor-on-hover" style="font-family: Noto Serif;">Noto Serif</li>
+                                    <li class="custom-cursor-on-hover" style="font-family: Montserrat;">Montserrat</li>
+                                </ul>
+                            </div>
+    
+                            <div>
+                                <ul>
+                                    <li class="custom-cursor-on-hover" style="font-family: Poppins;">Poppins</li>
+                                    <li class="custom-cursor-on-hover" style="font-family: Ubuntu;">Ubuntu</li>
+                                    <li class="custom-cursor-on-hover" style="font-family: Raleway;">Raleway</li>
+                                    <li class="custom-cursor-on-hover" style="font-family: Lora;">Lora</li>
+                                    <li class="custom-cursor-on-hover" style="font-family: Exo;">Exo</li>
+                                    <li class="custom-cursor-on-hover" style="font-family: Titillium Web;">Titillium Web</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                    </div>
+                    <button class="abso"> <i class="fa-solid fa-angle-right"></i></button>
+                </div>
+                <div>
+                    <span> Cỡ Chữ</span>
+                    <div class="font_size">
+                        <div>
+                            <input type="radio">                            
+                            <label data_size="13.5px" for="">Nhỏ</label>
+                        </div>
+                        
+                        <div>
+                            <input type="radio">                            
+                            <label data_size="14.5px" for="">Vừa</label>
+                        </div>
+                        <div>
+                            <input type="radio">                               
+                            <label data_size="15.5px" for="">Lớn</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="window window_color hidden">
+                <span> Màu Sắc</span>
+                <div class="ds_mau">
+                    <button class="abso"> <i class="fa-solid fa-angle-left"></i></i></button>
+                    <div class="khungnhin_c">
+                        <div class="daimau">
+                            <div class="bangmau">
+                                <ul>
+                                    <li><span style="background: rgb(68, 129, 190);"></span></li>
+                                    <li><span style="background: #7bc4c4;"></span></li>
+                                    <li><span style="background: #ba2649;"></span></li>
+                                    <li><span style="background: #996666;"></span></li>
+                                    <li><span style="background: rgb(85, 85, 85);"></span></li>
+                                    <li><span style="background: rgb(179 136 76);"></span></li>
+                                    <li><span style="background: #92a8d1;"></span></li>
+                                    <li><span style="background: #1a6b54"></span></li>
+                                    <li><span style="background: #e44e29;"></span></li>
+                                    <li><span style="background: rgb(251, 173, 0);"></span></li>
+                                    <li><span style="background: rgb(0, 159, 227);"></span></li>
+                                    <li><span style="background: rgb(232, 80, 122);"></span></li>
+                                    <li><span style="background: #FFD700;"></span></li>
+                                    <li><span style="background: rgb(38, 166, 154);"></span></li>
+                                    <li><span style="background: #ffa7ca;"></span></li>
+                                    <li><span style="background: #F87C56;"></span></li>
+                                </ul>
+                            </div>
+                            <div class="bangmau">
+                                <ul>
+                                    <li><span style="background: #d7c5b3;"></span></li>
+                                    <li><span style="background: #c0c0c0 ;"></span></li>
+                                    <li><span style="background: rgb(138, 73, 199);"></span></li>
+                                    <li><span style="background: rgb(58, 239, 245);"></span></li>
+                                    <li><span style="background: rgb(45, 188, 173);"></span></li>
+                                    <li><span style="background: rgb(150, 29, 17);"></span></li>
+                                    <li><span style="background: rgb(221, 115, 2);"></span></li>
+                                    <li><span style="background: rgb(10, 86, 80);"></span></li>
+                                    <li><span style="background: rgb(42, 173, 113);"></span></li>
+                                    <li><span style="background: rgb(198, 160, 103);"></span></li>
+                                    <li><span style="background: rgb(105, 112, 132);"></span></li>
+                                    <li><span style="background: #6667AB;"></span></li>
+                                    <li><span style="background: rgb(235, 80, 176);"></span></li>
+                                    <li><span style="background: rgb(8, 201, 235);"></span></li>
+                                    <li><span style="background: rgb(136 233 136);"></span></li>
+                                    <li><span style="background: rgb(4, 23, 132);"></span></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="abso"> <i class="fa-solid fa-angle-right"></i></button>
+                </div>
+            </div>
+            <!-- Mẫu CV -->
+            <div class="window window_maucv hidden">
+                <button class="abso"> <i class="fa-solid fa-angle-left"></i></i></button>
+                <div class="khungnhin_m">
+                    <div class="daianhcv">
+                        <ul>
+                            <li type_cv="mau0">
+                                <div><img src="./img/Ảnh chụp màn hình 2024-11-18 100709.png" alt=""></div>
+                                <p>Mặc Định</p>
+                            </li>
+                            <li type_cv="mau1">
+                                <div><img src="./img/Ảnh chụp màn hình 2024-11-24 234727.png" alt=""></div>
+                                <p>Mẫu 1</p>
+                            </li>
+                            <li type_cv="mau2">
+                                <div><img src="./img/Ảnh chụp màn hình 2024-11-24 235413.png" alt=""></div>
+                                <p>Mẫu 2</p>
+                            </li>
+                            <li type_cv="mau3">
+                                <div><img src="./img/Ảnh chụp màn hình 2024-11-24 235858.png" alt=""></div>
+                                <p>Mẫu 3</p>
+                            </li>
+                            <li type_cv="mau4">
+                                <div><img src="./img/Ảnh chụp màn hình 2024-11-25 000122.png" alt=""></div>
+                                <p>Mẫu 4</p>
+                            </li>
+                            <li type_cv="mau5">
+                                <div><img src="./img/Ảnh chụp màn hình 2024-11-25 000257.png" alt=""></div>
+                                <p>Mẫu 5</p>
+                            </li>
+                            <li type_cv="mau6">
+                                <div><img src="./img/Ảnh chụp màn hình 2024-11-25 000518.png" alt=""></div>
+                                <p>Mẫu 6</p>
+                            </li>
+                            <li type_cv="mau7">
+                                <div><img src="./img/Ảnh chụp màn hình 2024-11-25 000710.png" alt=""></div>
+                                <p>Mẫu 7</p>
+                            </li>
+                            <li type_cv="mau8">
+                                <div><img src="./img/Ảnh chụp màn hình 2024-11-25 001134.png" alt=""></div>
+                                <p>Mẫu 8</p>
+                            </li>
+                            <li type_cv="mau9">
+                                <div><img src="./img/Ảnh chụp màn hình 2024-11-25 001323.png" alt=""></div>
+                                <p>Mẫu 9</p>
+                            </li>
+                            <li type_cv="mau10">
+                                <div><img src="./img/Ảnh chụp màn hình 2024-11-25 001548.png" alt=""></div>
+                                <p>Mẫu 10</p>
+                            </li>
+                            <li type_cv="mau11">
+                                <div><img src="./img/Ảnh chụp màn hình 2024-11-25 001748.png" alt=""></div>
+                                <p>Mẫu 11</p>
+                            </li>
+                            <li type_cv="mau12">
+                                <div><img src="./img/Ảnh chụp màn hình 2024-11-25 001948.png" alt=""></div>
+                                <p>Mẫu 12</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <button class="abso"> <i class="fa-solid fa-angle-right"></i></i></button>
+            </div>
+            <!-- Ảnh -->
+            <div class="window window_img hidden">
+                <span> Ảnh Hồ Sơ</span>
+                <div>
+                    <ul>
+                        <li class="uploadImg"><i class="fa-solid fa-arrow-up-from-bracket"></i>Tải Lên</li>
+                        <li class="cutImg"><i class="fa-regular fa-images"></i>Cắt Ảnh</li>
+                        <li class="resize"><i class="fa-solid fa-maximize"></i>Đổi Kích Cỡ</li>
+                    </ul>
+                    <div class="an_anh"><i class="fa-solid fa-eye-slash"></i>Ẩn Ảnh</div>
+                </div>
+            </div>
+            <!--  -->
+            <div class="choose_upload hidden">
+                <span>Tải Ảnh Của Bạn Lên</span>
+                <i class="fa-solid fa-circle-xmark"></i>
+                <div class="img_select">
+                    <img src="./img/4fa9f9916731730fa5530958d3082548.jpg" alt="">
+                    <p>Bấm để tải ảnh của bạn lên</p>
+                </div>
+                <p>Hoặc</p>
+                <div class="img_default">
+                    <img src="./img/8a9d6e85a93b8b3a8002896da71882a3.jpg" alt="">
+                    <p>Sử Dụng Ảnh Mặc Định</p>
+                </div>
+            </div>
+            <!--  -->
+            <div class="func_uploadImg hidden">
+                <div>
+                    <span> Tải Lên</span>
+                    <span> Cắt Ảnh</span>
+                </div>
+                <i class="fa-solid fa-circle-xmark"></i>
+
+                <div class="upload_file">
+                    <p>Kéo và Thả file vào đây hoặc chọn File để tải ảnh lên</p>
+                    <p> hoặc</p>
+                    <button> Chọn File</button>
+                    <input type="file" hidden name="" id="">
+                </div>
+                <div class="useWhencutImg hidden">
+                    <button>Lưu</button>
+                    <button>Hủy Bỏ</button>
+                </div>
+                <div class="useWhenUpImg">
+                    <button>Tải Lên</button>
+                    <button>Hủy Bỏ</button>
+                </div>
+            </div>
+            <!-- Thay đổi kích thước ảnh -->
+             <div class="let_resize hidden">
+                <span> Đổi Kích Cỡ Ảnh</span>
+
+                <div>
+                    <button><i class="fa-solid fa-circle-minus giamkt"></i></button>
+
+                    <div class="slider">
+                        <div class="butt"></div>
+                    </div>
+
+                    <button><i class="fa-solid fa-circle-plus tangkt"></i></button>
+                </div>
+                <div class="useWhenResize">
+                    <button> Lưu</button>
+                    <button> Hủy Bỏ</button>
+                </div>
+             </div>
+            <div class="overlay hidden">
+
+            </div>
+        
+            <!-- Phần Giấy -->
+
+        <div >
+
+            </div>
+            <div class="paper">
+                <div class="heading_paper part_in_paper part_one">
+                    <section class="anh_CV">
+                        <img src="./img/8a9d6e85a93b8b3a8002896da71882a3.jpg" alt="">
+                    </section>
+                    <section class="introduce">
+                        <section class="title_HD part_ct">
+                            <section  style="margin-bottom: 12px;">
+                                <b id="name" class="possible_Part"> Nguyen Van A</b>
+                            </section>
+                            <section >
+                                <p id="position" class="possible_Part"> Fullstack developer</p>
+                            </section>
+                        </section>
+    
+                        <section class="information part_ct">
+                            <section class="personal_in4">
+                                <section>
+                                    <ul>
+                                        <li>
+                                           <label class="possible_Part">
+                                                <i class="fa-solid fa-phone my_icon " style="display: none;"></i>
+                                                <b> Phone</b>
+                                           </label>
+                                           <p id="phone" class="possible_Part">0394783098</p>     
+                                        </li>
+                                        <li>
+                                            <label class="possible_Part" for="">
+                                                <i class="fa-solid fa-house my_icon " style="display: none;"></i>
+                                                <b> Address</b>
+                                            </label>
+                                           <p id="address" class="possible_Part"> Ha Noi,Viet Nam</p> 
+                                        </li>
+                                    </ul>
+                                </section>
+                                <section>
+                                    <ul>
+                                        <li>
+                                            <label class="possible_Part" for="">
+                                                <i class="fa-solid fa-cake-candles my_icon " style="display: none;"></i>
+                                                <b>Birth</b>
+                                            </label>
+                                            <p id="birth" class="possible_Part">01/01/2020</p>
+                                        </li>
+                                        <li>
+                                            <label class="possible_Part" for=""> 
+                                                <i class="fa-solid fa-envelope my_icon " style="display: none;"></i>                                              
+                                                <b>Email</b>
+                                            </label>
+                                            <p id="email" class="possible_Part">quyenanhle0@gmail.com</p>
+                                        </li>
+                                        <li id="another">
+                                            <label class="possible_Part" for="">
+                                                <i class="fa-brands fa-github" style="display: none;"></i>
+                                                <b>GitHub</b>
+                                            </label>
+                                            <p id="github" class="possible_Part">link...</p>
+                                        </li>
+                                    </ul>
+                                </section>
+                            </section>
+                        </section>
+                    </section>
+
+                </div>
+
+                <div class="content_CV part_in_paper part_two">
+                    <!-- // [1] -->
+                    <section class="half-left">
+
+                    </section>
+                    <section class="half-right">
+                        <section class="overview part_ct paragraph">
+                            <section class="bold title possible_Part item_in_part have_line">
+                                <i class="fa-solid fa-eye"></i>
+                                <p >
+                                    Overview
+                                </p>
+                            </section>
+    
+                            <section class="ct_in_sectionSM">
+                                <section fatherpart="overview" class="ct_overview  type_1 paragraph possible_Part item_in_part">
+                                    <p>
+                                        - Over 2 years of experience in programming with good communication and quick learning skills 
+                                    </p>
+                                    <p>
+                                        - Strengths: Front-end technology and Back-end web application development
+                                    </p>
+                                    <p>
+                                        - Strengths: Front-end technology and Back-end web application development
+                                    </p>
+                                    <p>
+                                        - Strengths: Front-end technology and Back-end web application development
+                                    </p>
+                                    <p>
+                                        - Strengths: Front-end technology and Back-end web application development
+                                    </p>
+                                    <p>
+                                        - Strengths: Front-end technology and Back-end web application development
+                                    </p>
+                                    <p>
+                                        - Strengths: Front-end technology and Back-end web application development
+                                    </p>
+                                </section>
+                            </section>
+                        </section>
+    
+                        <!-- // [2] -->
+                        <section class="workexperience part_ct paragraph">
+    
+                            <section class="bold title possible_Part item_in_part have_line">
+                                <i class="fa-solid fa-suitcase"></i>
+                                <p>
+                                    Work Experience
+                                </p>
+                            </section>
+    
+                            <section class="time_work ct_in_sectionSM">   
+                                <section fatherpart="workexperience" class="content_in_CV paragraph item_in_part"> 
+                                    <section class="half_left_of_content_item bold possible_Part">
+                                        <p class="timeline type_2">01/2018 – Present</p>
+                                    </section>
+                                    <section class="half_right_of_content_item project_ofPart">
+                                        <section class="bold">
+                                            <p class="title_item type_2 possible_Part">F8 TECHNOLOGY EDUCATION.,JSC</p>
+                                        </section>
+                                        <p class="description type_2 possible_Part">Full-stack Developer</p>
+                                        <ul class="content_item type_2 possible_Part"> 
+                                            <li>Programme outsourcing projects</li>
+                                            <li>Programme outsourcing projects</li>
+                                            <li>Programme outsourcing projects</li>
+                                        </ul>
+                                    </section>
+                                </section>   
+                            </section>
+    
+                        </section>
+
+                         <!-- [3] -->
+    
+                        <section class="education part_ct paragraph">
+                            <section class="bold title possible_Part item_in_part have_line">
+                                <i class="fa-solid fa-graduation-cap"></i>
+                                <p>
+                                    Education
+                                </p>
+                            </section>
+    
+                            <section class="content_edu ct_in_sectionSM">
+                                <section fatherpart="education" class="content_in_CV paragraph item_in_part">
+                                    <section class="half_left_of_content_item bold possible_Part">
+                                        <p class="timeline type_2">2011/10 – 2014/09</p>
+                                    </section>
+                                    <section class="half_right_of_content_item study_place">
+                                        <section class="bold possible_Part">
+                                            <p class="title_item type_2">FBU </p>
+                                        </section>
+                                        <ul class="content_item type_2 possible_Part"> 
+                                            <li>Major - Website, Mobile Programming</li>
+                                            <li>Level - Good</li>
+                                            <li>Level - Good</li>
+                                        </ul>
+                                    </section>
+                                </section>
+    
+                            </section>
+    
+                        </section>
+                    </section>
+
+                </div>
+                
+                <div class="quantity_page">
+                    <p>
+                        Trang 1/1
+                    </p>
+                </div>
+
+            </div>
+        </div>
+        <div class="addNewItem grid wide hidden">
+            <h2> Thêm Phần Mới</h2>
+            <i class="fa-solid fa-circle-xmark abso close"></i>
+            <div class="list_partItem row">
+                <div  class="l-3 col overview"><i style="background-color: #fc4040;" class="fa-solid fa-eye"></i>
+                    <p > OverView</p>
+                </div>
+                <div  class="l-3 col workexperience"><i style="background-color: #fb8027;" class="fa-solid fa-suitcase"></i>
+                    <p > Work Experience</p>
+                </div>
+                <div  class="l-3 col education"><i style="background-color: #fbca36;" class="fa-solid fa-graduation-cap"></i>
+                    <p > Education</p>
+                </div>
+                <div  class="l-3 col skill"><i style="background-color: #12ac5f;" class="fa-solid fa-fire"></i>
+                    <p > Skill</p>
+                </div>
+                <div  class="l-3 col project"><i style="background-color: #3560f9;" class="fa-solid fa-fire"></i>
+                    <p > Project</p>
+                </div>
+                <div  class="l-3 col awards"><i style="background-color: #9a36fd;" class="fa-solid fa-fire"></i>
+                    <p > Awards</p>
+                </div>
+                <div  class="l-3 col goals"><i style="background-color: #fd4dba;" class="fa-solid fa-fire"></i>
+                    <p > Mục Tiêu Công Việc</p>
+                </div>
+                <div  class="l-3 col certificate"><i style="background-color: #4af3fc;" class="fa-solid fa-fire"></i>
+                    <p > Chứng Chỉ</p>
+                </div>
+                <div  class="l-3 col language"><i style="background-color: #964B00;" class="fa-solid fa-fire"></i>
+                    <p > Ngôn ngữ</p>
+                </div>
+                <div  class="l-3 col another"><i style="background-color: #808080;" class="fa-solid fa-fire"></i>
+                    <p > Khác</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="instruct l-3">
+            <p > 
+                <i class="fa-regular fa-lightbulb"></i>
+                Chọn 1 đoạn trong CV để nhận gợi ý và đề xuất
+            </p>
+            
+            
+            <div class="button_chatbot">
+                <a href="">
+                    <i class="fa-solid fa-robot"></i>
+                    Create with AI 
+                </a>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="./createCV.js"></script>
+</body>
+</html>
