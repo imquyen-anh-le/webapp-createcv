@@ -1,0 +1,12 @@
+﻿namespace TestAPI0501.Models
+{
+    public class Goals
+    {
+        public int goal_id { get; set; }
+        public int idcv { get; set; }
+        public required string term { get; set; }
+        public required string content { get; set; }
+        public required string container { get; set; }
+        public required string name_title { get; set; }
+    }
+}

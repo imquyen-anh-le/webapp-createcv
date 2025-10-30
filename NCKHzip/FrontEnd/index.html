@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demo 0</title>
+    <link rel="stylesheet" href="./mycv.css">
+    <link rel="stylesheet" href="./grid.css">
+    <link rel="stylesheet" href="./fontawesome-free-6.6.0-web/css/all.css">
+</head>
+<body>
+  <div class="mycv grid">
+      <div class="heading_cv">
+        <div class="dropdown-menu hidden">
+          <div class="menu-group name_user">
+            <a href="#" class="menu-item">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
+              </svg>
+              <span>
+                Name User
+              </span>
+            </a>
+            <a href="#" class="menu-item update_name">
+              <i class="fa-solid fa-circle-info"></i>
+              Đổi Tên 
+            </a>
+            <a href="#" class="menu-item update_password">
+              <i class="fa-solid fa-key"></i>
+              Đổi Mật Khẩu
+            </a>
+          </div>
+      
+          <div class="menu-group">
+            <a href="#" class="menu-item logout">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 16l4-4m0 0l-4-4m4 4H7m6 4v1a3 3 0 01-3 3H6a3 3 0 01-3-3V7a3 3 0 013-3h4a3 3 0 013 3v1" />
+              </svg>
+              Logout
+            </a>
+          </div>
+        </div>
+
+        <!-- <div class="icon">
+          <img src="./img/Remove-bg.ai_1729243490742.png" alt="">
+        </div> -->
+        
+        <div class="navigation">
+            <h2 class="logo white" > <span>CV</span>CVGenius
+              
+            </h2>
+            <div class="tienich">
+              <a href="#banner" class="nav-item">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                    <path d="M8.707 1.5a1 1 0 0 0-1.414 0L.646 8.146a.5.5 0 0 0 .708.708L2 8.207V13.5A1.5 1.5 0 0 0 3.5 15h9a1.5 1.5 0 0 0 1.5-1.5V8.207l.646.647a.5.5 0 0 0 .708-.708L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.707 1.5ZM13 7.207V13.5a.5.5 0 0 1-.5.5h-9a.5.5 0 0 1-.5-.5V7.207l5-5 5 5Z"/>
+                </svg>
+                Home
+            </a>
+            <a href="#introduce" class="nav-item">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                    <path d="M0 1.5A1.5 1.5 0 0 1 1.5 0h13A1.5 1.5 0 0 1 16 1.5v13a1.5 1.5 0 0 1-1.5 1.5h-13A1.5 1.5 0 0 1 0 14.5v-13zM1.5 1a.5.5 0 0 0-.5.5v13a.5.5 0 0 0 .5.5h13a.5.5 0 0 0 .5-.5v-13a.5.5 0 0 0-.5-.5h-13z"/>
+                    <path d="M2 3.5a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 .5.5v4a.5.5 0 0 1-.5.5h-4a.5.5 0 0 1-.5-.5v-4zm0 6a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 .5.5v4a.5.5 0 0 1-.5.5h-4a.5.5 0 0 1-.5-.5v-4zm6-6a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 .5.5v4a.5.5 0 0 1-.5.5h-4a.5.5 0 0 1-.5-.5v-4zm0 6a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 .5.5v4a.5.5 0 0 1-.5.5h-4a.5.5 0 0 1-.5-.5v-4z"/>
+                </svg>
+                Introduce
+            </a>
+            <a class="nav-item taoCV">
+                <i class="fa-solid fa-file-pen"></i>
+                Tạo CV
+            </a>
+            <a class="nav-item taoThu"> 
+                <i class="fa-solid fa-envelope"></i>
+                Tạo Thư
+            </a>
+            </div>
+            <div class="cong_cu">
+              <div class="option_user hidden">
+                <i class="fa-solid fa-user-large"></i>
+              </div>
+              <a class="white" href="#">ĐĂNG NHẬP  <i class="fa-solid fa-star"></i></a>
+            </div>
+        </div>
+          
+        <!-- Icons and Sales button -->
+
+      </div>
+    </div>
+      <div>
+        <div id="banner" class="banner">
+          <div style="--qal: 10" class="slider_head">
+            <div class="item" style="--pos: 1">
+              <img src="./img/Ảnh chụp màn hình 2024-10-17 095711.png" alt="">
+            </div>
+            <div class="item" style="--pos: 2"><img src="./img/Ảnh chụp màn hình 2024-10-17 100014.png" alt=""></div>
+            <div class="item" style="--pos: 3"><img src="./img/Ảnh chụp màn hình 2024-10-17 100103.png" alt=""></div>
+            <div class="item" style="--pos: 4"><img src="./img/bubbles.d44b279498d3608ce18b.png" alt=""></div>
+            <div class="item" style="--pos: 5"><img src="./img/Ảnh chụp màn hình 2024-10-17 100014.png" alt=""></div>
+            <div class="item" style="--pos: 6"><img src="./img/Ảnh chụp màn hình 2024-10-17 100103.png" alt=""></div>
+            <div class="item" style="--pos: 7"><img src="./img/Ảnh chụp màn hình 2024-10-17 100255.png" alt=""></div>
+            <div class="item" style="--pos: 8"><img src="./img/Ảnh chụp màn hình 2024-10-17 100014.png" alt=""></div>
+            <div class="item" style="--pos: 9"><img src="./img/bubbles.d44b279498d3608ce18b.png" alt=""></div>
+            <div class="item" style="--pos: 10"><img src="./img/cascade.8b9ea686d06174c4fd2d.png" alt=""></div>
+          </div>
+
+
+          <div class="doll">
+          </div>
+        </div>
+      </div>
+      <!-- Phần Content -->
+       <!-- content 0 -->
+        <div id="introduce" class="introduce_web">
+          <div class="title_intro">
+            <div>
+              <h2>🍀 Giới Thiệu </h2>
+            </div>
+            <p> <b>XIN CHÀOOO ✌️</b> Chào mừng bạn đến với <b>CVGenius</b> – nền tảng viết CV và thư xin việc thông minh dành riêng cho sinh viên mới tốt nghiệp.</p>
+            <p>Chúng tôi hiểu rằng bước đầu tiên trên con đường sự nghiệp luôn đầy thử thách, vì vậy <b>CVGenius</b> ra đời để giúp bạn tạo CV chuyên nghiệp, thu hút nhà tuyển dụng và nâng cao cơ hội việc làm.</p>
+            <p> <b>CVGenius</b> là nền tảng hỗ trợ sinh viên mới ra trường tạo CV và thư xin việc một cách nhanh chóng, chuyên nghiệp và tối ưu hóa theo từng ngành nghề</p>
+          </div>
+          <div class="item_of_intro">
+            <div>
+              <i class="fa-solid fa-brain"></i>
+              <div>
+                <span>
+                  <b>
+                    Tạo CV thông minh
+                  </b>
+                </span>
+                <p>Đề xuất nội dung và thiết kế phù hợp với từng ngành nghề.</p>
+              </div>
+            </div>
+            <div>
+              <i class="fa-solid fa-lightbulb"></i>
+              <div>
+                <span>
+                  <b>
+                    Gợi ý nội dung tự động
+                  </b>
+                </span>
+                <p>Hỗ trợ viết CV và thư xin việc chuyên nghiệp, chuẩn ATS.</p>
+              </div>
+            </div>
+            <div>
+              <i class="fa-solid fa-bolt-lightning"></i>
+              <div>
+                <span>
+                  <b>
+                    Tùy chỉnh linh hoạt
+                  </b>
+                </span>
+                <p>Dễ dàng chỉnh sửa, cá nhân hóa CV theo phong cách riêng.</p>
+              </div>
+            </div>
+            <div>
+              <i class="fa-solid fa-file-pdf"></i>
+              <div>
+                <span>
+                  <b>
+                    Xuất file nhanh chóng
+                  </b>
+                </span>
+                <p>Tải xuống CV dưới nhiều định dạng như PDF, DOC.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+       <div class="content_0">
+
+         <div class="ctn_video_0">
+          <video class="video_ct0" autoplay muted loop>
+            <source src="./img/vid-content0.mp4" type="video/mp4">
+          </video>
+         </div>
+
+         <div class="gioithieuweb">
+            <h3>💡 CVGenius có gì đặc biệt?</h3>
+            <ul>
+              <li> ✨ Giao diện thân thiện, dễ sử dụng: Giúp bạn nhanh chóng tạo CV ấn tượng mà không cần kỹ năng thiết kế.</li>
+              <li> ✨ Hệ thống gợi ý nội dung thông minh: Hỗ trợ viết các phần quan trọng như kinh nghiệm, kỹ năng, mục tiêu nghề nghiệp.</li>
+              <li> ✨ Mẫu CV đa dạng theo ngành: Được tối ưu hóa cho từng lĩnh vực để phù hợp với yêu cầu tuyển dụng.</li>
+              <li> ✨ Hỗ trợ viết thư xin việc: Giúp bạn tạo cover letter chuyên nghiệp, tăng khả năng trúng tuyển.</li>
+            </ul>
+         </div>
+       </div>
+       <!-- content 1 -->
+       <div id="content1" class="content_1 white">
+
+          <div class="left_ct1">
+            <div class="box_ct_0">
+              <h2 >✨ TẠO CV CỦA BẠN CHUYÊN NGHIỆP DỄ DÀNG VÀ NHANH CHÓNG</h2>
+              <p style="margin-top: 2em; font-size: 20px;">
+                Công cụ mới nhất được phát triển để giúp các bạn sinh viên và 
+                người đi làm viết CV và thư xin việc có thể chạm đến nhà tuyển dụng
+              </p>
+              <div class="create_cv">
+                <a>TẠO NGAY</a>
+              </div>
+             </div>
+          </div>
+
+          <div class="right_ct1">
+            <div class="shadow">
+              <h2>✨ TẠO THƯ XIN VIỆC MIỄN PHÍ DỄ DÀNG VÀ NHANH CHÓNG</h2>
+              <img src="./img/Remove-bg.ai_1729228424883.png" alt="">
+              <a>
+                <p>TẠO THƯ XIN VIỆC</p>
+              </a>
+            </div>
+          </div>
+
+       </div>
+      </div>
+    </div>
+    <div class="form-setpassword hidden">
+      <div class="close-tab">
+        <i class="fa-solid fa-circle-xmark"></i>
+      </div>
+      <h2 class="form-title">Đổi mật khẩu</h2>
+      <form id="passwordChangeForm">
+        <div class="form-group">
+          <label class="form-label" for="currentPassword">🗝️ Mật khẩu hiện tại</label>
+          <input 
+            type="password" 
+            id="currentPassword" 
+            class="form-input" 
+            required
+            autocomplete="current-password"
+            placeholder="Nhập Mật Khẩu Hiện Tại"
+          >
+          <div class="error-message" id="currentPasswordError">
+            
+          </div>
+        </div>
+  
+        <div class="form-group">
+          <label class="form-label" for="newPassword">🗝️ Mật khẩu mới</label>
+          <input 
+            type="password" 
+            id="newPassword" 
+            class="form-input" 
+            required
+            autocomplete="new-password"
+            placeholder="Nhập Mật Khẩu Mới"
+          >
+          <div class="error-message" id="newPasswordError">
+            
+          </div>
+        </div>
+  
+        <div class="form-group">
+          <label class="form-label" for="confirmPassword">🗝️ Xác nhận mật khẩu mới</label>
+          <input 
+            type="password" 
+            id="confirmPassword" 
+            class="form-input" 
+            required
+            autocomplete="new-password"
+            placeholder="Nhập Lại Mật Khẩu Mới"
+          >
+          <div class="error-message" id="confirmPasswordError">
+            
+          </div>
+        </div>
+        
+        <button type="submit" class="submit-button">Đổi mật khẩu</button>
+      </form>
+      </div>
+    </div>
+    <div class="container">
+      <div class="form-container hidden">
+        <div class="close-tab">
+          <i class="fa-solid fa-circle-xmark"></i>
+        </div>
+        <h2>Đổi Tên Người Dùng</h2>
+        <form id="changeUsernameForm">
+            <div class="form-group">
+                <label for="newUsername">👤 Tên người dùng mới</label>
+                <input type="text" id="newUsername" placeholder="Điền tên mới của bạn" required>
+                <span class="error-message"></span>
+            </div>
+            <button type="submit">Đổi Tên Người Dùng</button>
+        </form>
+    </div>
+    <div class="form_qal1  c-0 l-0 m-0">
+      <!-- c-0 l-0 m-0 -->
+      <form id="form1" action="">
+          <!-- close -->
+          <div class="close_form1">
+              <i class="fa-solid fa-circle-xmark"></i>
+          </div>
+
+          <h3 style="color: red"> Đăng Ký</h3>
+          <p>Tạo tài khoản của bạn và đăng nhập ngay bây giờ</p>
+
+          <div class="input_form1">
+                      <!-- Họ Tên -->
+              <div class="input_form1_item">
+                  <label>Tên Người Dùng</label>
+                  <input name="" id="fullname1" type="text" placeholder="VD: Lê Quyền Anh">
+                  <span class="form_mess1"></span>
+              </div>
+                  <!-- Email -->
+              <div class="input_form1_item">
+                  <label>Email</label>
+                  <input name="" id="email1" type="text" placeholder="VD: hmy@gmail.com">
+                  <span class="form_mess1"></span>
+              </div>
+                  <!-- Mật Khẩu -->
+              <div class="input_form1_item">
+                  <label>Mật Khẩu</label>
+                  <input name="" id="password1" type="password" placeholder="Nhập mật khẩu của bạn">
+                  <span class="form_mess1"></span>
+              </div>
+                  <!-- Nhập Lại Mật Khẩu -->
+              <div class="input_form1_item">
+                  <label>Nhập lại Mật Khẩu</label>
+                  <input name="" id="rp_password1" type="password" placeholder="Nhập lại mật khẩu của bạn">
+                  <span class="form_mess1"></span>
+              </div>
+              <span id="error_dk1"></span>
+          </div>
+          <!-- Điều Khoản -->
+          <button id="dangki1">Đăng Ký
+              <i class="fa-solid fa-square-check"></i>
+          </button>
+          <div class="footer1">
+              <p>Bạn Đã Có Tài Khoản ? <span> Đăng Nhập Ngay</span>
+              </p>
+          </div>
+      </form>
+    </div> 
+    
+    <div class="form_qal2 c-0 l-0 m-0">
+      <!-- c-0 l-0 m-0 -->
+      <form id="form2" action="">
+          <!-- close -->
+          <div class="close_form1">
+              <i class="fa-solid fa-circle-xmark"></i>
+          </div>
+
+          <h3 style="color: red"> Đăng Nhập</h3>
+          <p>Đăng Nhập Ngay Để sử dụng dịch vụ của chúng tôi</p>
+
+          <div class="input_form2">
+                  <!-- Email -->
+              <div class="input_form2_item">
+                  <label>Email</label>
+                  <input name="" id="email2" type="text" placeholder="VD: hmy@gmail.com">
+                  <span class="form_mess2"></span>
+              </div>
+                  <!-- Mật Khẩu -->
+              <div class="input_form2_item">
+                  <label>Mật Khẩu</label>
+                  <input name="" id="password2" type="password" placeholder="Nhập mật khẩu của bạn">
+                  <span class="form_mess2"></span>
+              </div>
+          </div>
+          <!-- Điều Khoản -->
+          <button id="dangki2">Đăng Nhập
+              <i class="fa-solid fa-square-check"></i>
+          </button>
+          <div class="footer2">
+              <p>Bạn Chưa Có Tài Khoản ? <span> Đăng Ký Ngay</span>
+              </p>
+          </div>
+      </form>
+    </div>
+    <div class="overlay"></div>
+    </div>
+    
+    <footer class="footer">
+      <div class="list_video_yt">
+        <button><i class="fa-solid fa-caret-left"></i></button>
+        <div class="khung_nhin">
+          <div class="daianh">
+            <div>
+              <iframe width="360" height="230" src="https://www.youtube.com/embed/ivtoCCE5Ff4" title="Những điều nên và không nên làm khi viết CV" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+            <div>
+              <iframe width="360" height="230" src="https://www.youtube.com/embed/BYacNtHR1kA" title="cùng vinh Review CV Software Engineer Fresher - Số 02" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+            <div>
+              <iframe width="360" height="230" src="https://www.youtube.com/embed/nC9lcq8O-i8" title="Chiếc CV này đã giúp mình nhận Vài Chục Offer và có Job Ngon" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+            <div>
+              <iframe width="360" height="230" src="https://www.youtube.com/embed/nCVDg40aoeY" title="Fresher/Người Ít Kính Nghiệm &quot;Phải Biết&quot; Nếu Muốn Xin Việc/Thực Tập | Review CV Trong 3 phút" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+            <div>
+              <iframe width="360" height="230" src="https://www.youtube.com/embed/2fqXC4RQyOw" title="5 Bước Viết CV Xin Việc Cho Người KHÔNG CÓ KINH NGHIỆM | Huỳnh Duy Khương" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+            <div>
+              <iframe width="360" height="230" src="https://www.youtube.com/embed/pjqi_M3SPwY" title="5 Resume Mistakes You MUST Avoid (with real examples)!" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+          </div>
+        </div>
+        <button><i class="fa-solid fa-caret-right"></i></button>
+      </div>
+      <hr>
+        <div class="footer-content">
+            <div class="footer-logo">
+                <h2 class="logo white" style="color: #057a48; display:block; margin-bottom: 12px;"> <span style="color: #fff; margin-right: 4px;">CV</span>CVGenius
+                
+                </h2>
+                <p>☎️ Liên Hệ với chúng tôi</p>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#"><i class="fab fa-google"></i></a>
+                </div>
+            </div>
+            <div class="footer-links">
+                <div class="footer-column">
+                    <h3>Company</h3>
+                    <ul>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Services</a></li>
+                        <li><a href="#">Community</a></li>
+                        <li><a href="#">Testimonial</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Support</h3>
+                    <ul>
+                        <li><a href="#">Help Center</a></li>
+                        <li><a href="#">Tweet @ Us</a></li>
+                        <li><a href="#">Webians</a></li>
+                        <li><a href="#">Feedback</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Links</h3>
+                    <ul>
+                        <li><a href="#">Courses</a></li>
+                        <li><a href="#">Become Teacher</a></li>
+                        <li><a href="#">Service</a></li>
+                        <li><a href="#">All in One</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Contact Us</h3>
+                    <div class="contact-info">
+                        <i class="fas fa-phone"></i>
+                        <a href="tel: 0394783098">0394783098</a>
+                    </div>
+                    <div class="contact-info">
+                        <i class="fas fa-envelope"></i>
+                        <a href="mailto:quyenanhle0@gmail.com">quyenanhle0@gmail.com</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="./mycv.js"></script>
+    <script>
+      // JS của form CV
+      Validator({
+        form1: '#form1', // form cha bao hàm tất cả các thẻ trong form 
+        formInput: '.input_form1_item', // form con bao bọc thẻ input và các thẻ khác 
+        rules: [
+          Validator.isRequired1('#fullname1'), // Lỗi Để trống
+          Validator.isRequired1('#email1'), // Lỗi Để trống
+          Validator.isEmail1('#email1'),
+          Validator.isRequired1('#password1'), // Lỗi Để trống
+          Validator.isPassWord1('#password1',6),
+          Validator.isRequired1('#rp_password1'), // Lỗi Để trống
+          Validator.isRepertPW1('#rp_password1',function(){
+              return document.querySelector('#form1 #password1').value;
+          })
+        ]
+      })
+    </script>
+  </body>
+</html>
+
+

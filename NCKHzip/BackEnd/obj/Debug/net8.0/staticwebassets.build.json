@@ -1,0 +1,19 @@
+{
+  "Version": 1,
+  "Hash": "XgL9/o5MJ7c8fKJUSPePCsjwD2CWYxudizR75JBfdPI=",
+  "Source": "TestAPI0501",
+  "BasePath": "_content/TestAPI0501",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "TestAPI0501\\wwwroot",
+      "Source": "TestAPI0501",
+      "ContentRoot": "C:\\Users\\user\\OneDrive\\C#\\TestAPI0501\\wwwroot\\",
+      "BasePath": "_content/TestAPI0501",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": []
+}
